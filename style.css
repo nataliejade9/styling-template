@@ -10,6 +10,9 @@ body {
 nav {
     display: flex;
     height: 175px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav > * {
@@ -28,7 +31,12 @@ h2 {
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgb(53, 82, 37);
+    color: rgb(125, 35, 35);
+}
+
+p {
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .title {
@@ -43,8 +51,12 @@ h2 {
 
 /* Colour Palette Section */
 
+.colour p {
+    opacity: 0.5;
+}
+
 .palette, .fonts h2 {
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 .palette {
@@ -61,10 +73,15 @@ h3 {
 .colours {
     padding: 1em 1em;
     display: flex;
+    gap: 4em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .colours > * {
     flex: 1 1 100%;
+    max-width: 10ch;
 }
 
 .colour {
@@ -76,6 +93,10 @@ h3 {
     width: 4em;
     border-radius: 50%;
     margin: 0 auto;
+}
+
+.swatch:hover {
+    transform: scale(1.1);
 }
 
 .cream {
@@ -106,17 +127,14 @@ h3 {
 
 .georgia, .georgia h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.7;
 }
 
 .lato h3 {
     font-family: lato, sans-serif;
 }
 
-.thin {
-    font-weight: 100;
-}
-
-.font h3 {
+.bold {
     font-weight: bold;
 }
 
@@ -147,26 +165,77 @@ h3 {
 ul {
     list-style: none;
     padding: 0;
+    line-height: 2em;
 }
 
 .style-card {
     height: 300px;
-    border: 1px solid rgb(255, 238, 230);
     text-align: center;
+    border: 1px dotted rgb(235, 205, 183);
+    border-radius: 80%;
+}
+
+.cards h3 {
+    padding-top: 0.75em;
 }
 
 .cards {
     display: flex;
     padding-top: 3em;
     gap: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards > * {
-    flex: 1 1 100%;
+    flex: 1 1 30ch;
+    max-width: 30ch;
 }
 
 h4 {
     font-family: raleway, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.style-card h2 {
+    margin: 1em 0;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 238, 230);
+    color: rgb(201, 132, 58);
+    margin: 0;
+    padding: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 82, 37);
+}
+
+a:visited {
+    color: rgb(125, 35, 35);
+    
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Media */
+
+@media only screen and (max-width: 750px) {
+    nav {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .palette {
+        padding: 3em 0;
+    }
 }
