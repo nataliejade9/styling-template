@@ -9,9 +9,7 @@ body {
 
 nav {
     display: flex;
-    height: 175px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    min-height: 175px;
     justify-content: center;
 }
 
@@ -74,7 +72,6 @@ h3 {
     padding: 1em 1em;
     display: flex;
     gap: 4em;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -232,13 +229,8 @@ a:hover {
 
 /* Media */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 665px) {
     nav {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .palette {
-        padding: 3em 0;
+        flex-wrap: wrap;
     }
 }
