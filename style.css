@@ -171,7 +171,7 @@ ul {
 .style-card {
     height: 300px;
     text-align: center;
-    border: 1px dotted rgb(235, 205, 183);
+    border: 2px dashed rgb(235, 205, 183);
     border-radius: 80%;
 }
 
