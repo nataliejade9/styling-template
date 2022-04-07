@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lato, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 175px;
+}
+
+nav > * {
+    flex: 1 1  100%;
+    padding: 2em 3em;
+}
+
+h1 {
+    font-family: raleway, sans-serif;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+.title {
+    color: rgb(255, 238, 230);
+    background-color: rgb(73, 105, 55);
+}
+
+.project {
+    color: rgb(73, 105, 55);
+    background-color: rgb(255, 238, 230);
+    text-align: right;
+    
+}
+
+.colours {
+    padding: 0 1em;
+}
+
+.colours h2 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: raleway, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.colour {
+    
+}
+
+.circle {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+}
+
+.cream {
+    background-color: rgb(255, 238, 230);
+}

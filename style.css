@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lato, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 175px;
+}
+
+nav > * {
+    flex: 1 1 100%;
+    padding: 2em 3em;
+}
+
+h1 {
+    font-family: raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(53, 82, 37);
+}
+
+.title {
+    color: rgb(255, 238, 230);
+    background-color: rgb(53, 82, 37);
+}
+
+.project {
+    color: rgb(53, 82, 37);
+    background-color: rgb(255, 238, 230);
+}
+
+/* Colour Palette Section */
+
+.palette, .fonts h2 {
+    margin: 2em 0;
+}
+
+.palette {
+    padding: 1em 0;
+}
+
+h3 {
+    font-family: raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.colours {
+    padding: 1em 1em;
+    display: flex;
+}
+
+.colours > * {
+    flex: 1 1 100%;
+}
+
+.colour {
+    text-align: center;
+}
+
+.swatch {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.cream {
+    background-color: rgb(255, 238, 230);
+}
+
+.green {
+    background-color: rgb(53, 82, 37);
+}
+
+.red {
+    background-color: rgb(125, 35, 35);
+}
+
+.tan {
+    background-color: rgb(201, 132, 58);
+}
+
+.beige {
+    background-color: rgb(235, 205, 183);
+}
+
+/* Font Section */
+
+.raleway {
+    font-family: raleway, sans-serif;
+}
+
+.georgia, .georgia h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lato h3 {
+    font-family: lato, sans-serif;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.font h3 {
+    font-weight: bold;
+}
+
+.font {
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.fonts {
+    background-color: rgb(235, 205, 183);
+    border-top: 1px dashed rgb(125, 35, 35);
+    padding: 1em 0;
+}
+
+/* Typography Section */
+
+.typography {
+    background-color: rgb(125, 35, 35);
+    color: rgb(255, 238, 230);
+    padding: 3em 0;
+}
+
+.typography h2 {
+    margin: 0;
+    color: rgb(255, 238, 230);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.style-card {
+    height: 300px;
+    border: 1px solid rgb(255, 238, 230);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    padding-top: 3em;
+    gap: 2em;
+}
+
+.cards > * {
+    flex: 1 1 100%;
+}
+
+h4 {
+    font-family: raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
